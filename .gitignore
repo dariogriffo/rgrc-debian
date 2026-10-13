@@ -1,0 +1,23 @@
+# .deb Packages
+*.deb
+
+# Source packages
+*.dsc
+*.orig.tar.gz
+*.debian.tar.xz
+
+# Downloaded / extracted upstream release artifacts
+rgrc-*-unknown-linux-*/
+rgrc-*-unknown-linux-*.tar.gz
+rgrc-extras/
+rgrc-host/
+rgrc-host.tar.gz
+rgrc-src.tar.gz
+/rgrc-[0-9]*/
+/usr/
+/etc/
+/DEBIAN/
+.rgrc_release_name
+
+.idea/*
+.DS_Store

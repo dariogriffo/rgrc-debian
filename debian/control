@@ -1,0 +1,21 @@
+Source: rgrc
+Section: utils
+Priority: optional
+Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Build-Depends: debhelper-compat (= 13), wget, ca-certificates
+Standards-Version: 4.6.2
+Homepage: https://github.com/lazywalker/rgrc
+Rules-Requires-Root: no
+
+Package: rgrc
+Architecture: amd64 arm64 armhf i386
+Depends: ${misc:Depends}
+Description: Rusty Generic Colouriser, a fast grc written in Rust
+ rgrc colorizes the output of other commands such as ping, df, ls, ps,
+ docker, journalctl, kubectl, dig, ip and netstat using grc/grcat-style
+ configuration files. It runs a command and colors its output
+ (rgrc ping -c 4 debian.org) or colors piped input (df -h | rgrc -c df).
+ .
+ Ships around 100 command configs in /usr/share/rgrc, the main mapping in
+ /etc/rgrc.conf, and completions for bash, fish and zsh. Aliases are not
+ enabled by default; add eval "$(rgrc --aliases)" to your shell rc file.
